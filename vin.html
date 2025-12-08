@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vin</title>
-</head>
-<body>
-    
-</body>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vin → Oste (Fejlfast)</title>
+    <link rel="stylesheet" href="css/vin.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Vin → Oste (søg + select)</h1>
+
+      <div class="row">
+        <input id="searchInput" type="text" placeholder="Søg vin (fx 'Pinot' eller 'Cabernet')" />
+        <button id="clearBtn" title="Ryd søgning">Ryd</button>
+      </div>
+
+      <div class="search-results" id="searchResults" role="list"></div>
+
+      <div style="margin-top: 12px">
+        <label for="wineSelect">Eller vælg fra listen</label>
+        <select id="wineSelect">
+          <option value="">-- Vælg vin --</option>
+          <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+          <option value="Pinot Noir">Pinot Noir</option>
+          <option value="Merlot">Merlot</option>
+          <option value="Chardonnay">Chardonnay</option>
+          <option value="Sauvignon Blanc">Sauvignon Blanc</option>
+          <option value="Riesling">Riesling</option>
+          <option value="Syrah / Shiraz">Syrah / Shiraz</option>
+          <option value="Champagne">Champagne</option>
+          <option value="Rosé">Rosé</option>
+          <option value="Zinfandel">Zinfandel</option>
+        </select>
+      </div>
+
+      <div id="cheeseBox" class="results" aria-live="polite"></div>
+
+      <div class="hint">Åbn browserens udviklerværktøj (F12) og kig i Console for detaljeret fejllog, hvis det stadig ikke virker.</div>
+    </div>
+    <script src="js/vin.js"></script>
+  </body>
 </html>
