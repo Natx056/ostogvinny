@@ -1,0 +1,18 @@
+body{
+    background-color: #fcfdfc;
+}
+
+@font-face {
+    font-family: great vibes;
+    src: url(../font/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: cormorant nor;
+    src: url(../font/CormorantInfant-Regular.ttf);
+}
+
+@font-face {
+    font-family: cormorant boldit;
+    src: url(../font/CormorantInfant-BoldItalic.ttf);
+}
