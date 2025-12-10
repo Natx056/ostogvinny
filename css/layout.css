@@ -1,0 +1,19 @@
+.grid_3fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.menu {
+  display: flex; 
+  list-style: none;
+  justify-content: space-between;
+  
+} 
+.menu li{
+    margin-left: 20px;
+}
+header {
+  position: sticky;
+  display: flex;
+}
