@@ -1,18 +1,35 @@
-body{
-    background-color: #fcfdfc;
+body {
+  background-color: #fcfdfc;
 }
 
 @font-face {
-    font-family: great vibes;
-    src: url(../font/GreatVibes-Regular.ttf);
+  font-family: great vibes;
+  src: url(../font/GreatVibes-Regular.ttf);
 }
 
 @font-face {
-    font-family: cormorant nor;
-    src: url(../font/CormorantInfant-Regular.ttf);
+  font-family: cormorant nor;
+  src: url(../font/CormorantInfant-Regular.ttf);
 }
 
 @font-face {
-    font-family: cormorant boldit;
-    src: url(../font/CormorantInfant-BoldItalic.ttf);
+  font-family: cormorant boldit;
+  src: url(../font/CormorantInfant-BoldItalic.ttf);
+}
+
+h1 {
+  font-family: great vibes;
+  font-size: 50px;
+  color: #7e2b30;
+}
+
+h2,
+h3 {
+  font-family: cormorant boldit;
+  color: #7e2b30;
+}
+
+p {
+  font-family: cormorant nor;
+  color: black;
 }
