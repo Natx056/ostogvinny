@@ -1,0 +1,15 @@
+.hero {
+  margin: -1rem -1rem 1rem;
+  height: 100svh;
+  color: #fcfdfc;
+  font-family: cormorant boldit;
+  font-weight: 900;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3f2d;
+  background-image: url(../img/Produktoversigt-Fast-ost.png);
+  background-size: cover;
+  background-position: 47% 76%;
+}
