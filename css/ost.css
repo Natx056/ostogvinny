@@ -1,0 +1,23 @@
+.grid_3fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_grid {
+  display: flex;
+}
+
+.flexboxost {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+section {
+  padding: 20px;
+}
