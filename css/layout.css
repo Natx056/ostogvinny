@@ -7,6 +7,7 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 43em;
 }
 .menu li {
   margin-right: 20px;
@@ -25,6 +26,7 @@ nav {
 .menu a:hover {
   color: #8b4869;
 }
+
 .burger {
   width: 30px;
   height: 20px;
