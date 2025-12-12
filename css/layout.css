@@ -1,6 +1,7 @@
 nav {
   display: flex;
   align-items: center;
+  gap: 13em;
 }
 .menu {
   display: flex;
