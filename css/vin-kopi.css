@@ -41,7 +41,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #e4a0a5;
+  background: #8b4869;
   border-color: #000;
   color: #fff;
 }
@@ -186,7 +186,7 @@ button.nav-btn {
   background: x#bf646a;
 }
 button.nav-btn:hover {
-  background: #e4a0a5;
+  background: #8b4869;
   border-color: #000;
   color: #fff;
 }
