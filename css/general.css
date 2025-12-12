@@ -33,3 +33,31 @@ p {
   font-family: cormorant nor;
   color: black;
 }
+
+.logo{
+    max-width:47px;
+}
+
+.cta {
+  font-family: cormorant boldit;
+  font-style: normal;
+  font-variation-settings: "wdth" 50;
+  font-weight: 600;
+  font-size: 20px;
+  justify-content: center;
+  color: #F4CF85;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  text-decoration: none;
+  background-color: #7E2B30;
+  border-radius: 0.5em;
+  display: flex;
+  width: 150px;
+  height: 30px;
+}
+
+.cta:hover {
+  background-color: #8B4869;
+  color: #f4cf85;
+}
