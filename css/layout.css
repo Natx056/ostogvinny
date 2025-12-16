@@ -11,6 +11,8 @@ nav {
 }
 .menu li {
   margin-right: 20px;
+  font-family: cormorant boldit;
+  font-size: 20px;
 }
 .menu li:last-child {
   margin-right: 0;
@@ -96,10 +98,11 @@ nav {
 
 footer nav ul li{
     margin-left: 1em;
+    font-family: cormorant boldit;
 }
 
 footer img{
 margin-top: 3em;
-margin-left: 10em;
+margin-left: 8.5em;
 max-height: 160px;
 }

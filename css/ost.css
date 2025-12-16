@@ -220,3 +220,7 @@ button.nav-btn:hover {
     width: 86%;
   }
 }
+
+label{
+    font-family: cormorant nor;
+}
