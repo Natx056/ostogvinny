@@ -36,6 +36,7 @@ p {
 
 .logo{
     max-width:47px;
+    
 }
 
 .cta {
@@ -60,4 +61,9 @@ p {
 .cta:hover {
   background-color: #8B4869;
   color: #f4cf85;
+}
+
+.headline{
+    font-size: 35px;
+    margin-top: 0.5em;
 }

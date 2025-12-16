@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Zinfandel: [
       { name: "Aged Cheddar", note: "Skarp ost til kraftig, frugtig vin.", img: "https://www.keystonefarmscheese.com/cdn/shop/files/Cheddar-White3.jpg?v=1712088283&width=1080" },
       { name: "Smoked Gouda", note: "Røg + mørk frugt = perfekt.", img: "https://www.goudaostshop.dk/pub/media/catalog/product/cache/e49b825e2097b82b7746eb40be207ecb/b/o/boerenrookkaas_6.jpg" },
-      { name: "Pecorino Romano", note: "Salt og intensitet matcher Zinfandel.", img: "https://www.parmashop.com/cdn/shop/files/7649.webp?v=1743691260" },
+      { name: "Pecorino Romano", note: "Salt og intensitet matcher Zinfandel.", img: "https://www.parmashop.com/cdn/shop/files/7651.webp?v=1743691260&width=1200" },
     ],
   };
 
@@ -120,6 +120,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function escapeHtml(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
+  const WINES = {
+    "Cabernet Sauvignon": "imgvin/carbernet_result.jpg",
+    "Pinot Noir": "imgvin/pinotnoir_result.jpg",
+    Merlot: "imgvin/merlot_result.jpg",
+    Chardonnay: "imgvin/chardonnay.webp",
+    "Sauvignon Blanc": "imgvin/sauvignon_blanc.png_result.jpg",
+    Riesling: "imgvin/riesling.png_result.jpg",
+    "Syrah / Shiraz": "imgvin/syrah-shiraz-2012-distrikt-somontano-druesort-enate-land-spanien-omrade-spansk-rodvin-vin-emil-vinklubben-913_1080x.jpg_result.jpg",
+    Champagne: "imgvin/champagne.png_result.jpg",
+    Rosé: "imgvin/rose_result.jpg",
+    Zinfandel: "imgvin/zinfandel.jpeg_result.jpg",
+  };
 
   // Populate search results under the search input
   function showSearchMatches(q) {
@@ -138,13 +150,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchResults.innerHTML = matches
       .map((k) => {
-        const img = PAIRINGS[k][0] && PAIRINGS[k][0].img ? PAIRINGS[k][0].img : `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
-        return `<div class="search-item" data-wine="${encodeURIComponent(k)}">
-                <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
-                <div>${escapeHtml(k)}</div>
-              </div>`;
+        const img =
+          WINES[k] ||
+          `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'
+        width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
+
+        return `
+        <div class="search-item" data-wine="${encodeURIComponent(k)}">
+          <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
+          <div>${escapeHtml(k)}</div>
+        </div>`;
       })
       .join("");
+
     searchResults.style.display = "block";
   }
 
