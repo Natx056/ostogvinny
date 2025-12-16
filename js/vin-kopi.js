@@ -121,17 +121,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
   const WINES = {
-    "Cabernet Sauvignon": "imgvin/cabernet_result.png",
-    "Pinot Noir": "imgvin/pinotnoir_result.png",
-    Merlot: "img/vin/merlot_result.png",
-    Chardonnay: "imgvin/chardonnay_result.png",
-    "Sauvignon Blanc": "imgvin/sauvignon.png",
-    Riesling: "imgvin/riesling.png",
-    "Syrah / Shiraz": "imgvin/syrah.png",
-    Champagne: "imgvin/champagne.png",
-    Rosé: "imgvin/rose.png",
-    Zinfandel: "imgvin/zinfandel.png",
+    "Cabernet Sauvignon": "imgvin/carbernet_result.jpg",
+    "Pinot Noir": "imgvin/pinotnoir_result.jpg",
+    Merlot: "imgvin/merlot_result.jpg",
+    Chardonnay: "imgvin/chardonnay.webp",
+    "Sauvignon Blanc": "imgvin/sauvignon_blanc.png_result.jpg",
+    Riesling: "imgvin/riesling.png_result.jpg",
+    "Syrah / Shiraz": "imgvin/syrah-shiraz-2012-distrikt-somontano-druesort-enate-land-spanien-omrade-spansk-rodvin-vin-emil-vinklubben-913_1080x.jpg_result.jpg",
+    Champagne: "imgvin/champagne.png_result.jpg",
+    Rosé: "imgvin/rose_result.jpg",
+    Zinfandel: "imgvin/zinfandel.jpeg_result.jpg",
   };
+
   // Populate search results under the search input
   function showSearchMatches(q) {
     if (!q) {
