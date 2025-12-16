@@ -204,13 +204,19 @@ function showSearchMatches(q) {
 
   searchResults.innerHTML = matches
     .map((k) => {
-      const img = PAIRINGS[k][0] && PAIRINGS[k][0].img ? PAIRINGS[k][0].img : `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
-      return `<div class="search-item" data-wine="${encodeURIComponent(k)}">
-                <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
-                <div>${escapeHtml(k)}</div>
-              </div>`;
+      const img =
+        WINES[k] ||
+        `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'
+        width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
+
+      return `
+        <div class="search-item" data-wine="${encodeURIComponent(k)}">
+          <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
+          <div>${escapeHtml(k)}</div>
+        </div>`;
     })
     .join("");
+
   searchResults.style.display = "block";
 }
 
