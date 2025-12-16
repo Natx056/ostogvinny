@@ -59,24 +59,56 @@ const PAIRINGS = {
     { name: "Pinot Noir", note: "Let og salt, holder parringen frisk.", img: "https://www.aevin.dk/wp-content/uploads/2023/09/Pinot-Noir-Vin-de-France-Heritiers-Sanint-Abel_1.jpg" },
   ],
   Gorgonzola: [
-    { name: "Sauternes", note: "Sødmen i dessertvine som Sauternes balancerer salt- og umamismagen i Gorgonzola og skaber en lækker kontrast mellem sødt og salt.", img: "https://www.juuls.dk/admin/public/getimage.ashx?Image=/Files/Images/Products/35011969.jpg&Width=480&Height=0&Format=jpg&Quality=75&Crop=0&filename=35011969-Chateau-des-Ormes-Sauternes.jpg" },
-    { name: "Off-dry Riesling", note: "En let frugtig, let sød hvidvin med frisk syre hjælper med at rense ganen og tone den stærke ostesmag ned, samtidig med at vinens frugtighed fremhæver ostens cremethed.", img: "https://winecountryontario.ca/wp-content/uploads/2024/04/Lailey-2022Off-DryRiesling_990x.webp" },
-    { name: "Lambrusco", note: "Den let sprudlende, frugtige og ofte let sødlige Lambrusco har frisk syre og røde bærtoner, der både skærer gennem ostens rigdom og spiller godt sammen med dens aromaer.", img: "https://www.vinello.dk/media/image/db/43/6e/riunite-lambrusco-rosso-magnum.png" },
+    {
+      name: "Sauternes",
+      note: "Sødmen i dessertvine som Sauternes balancerer salt- og umamismagen i Gorgonzola og skaber en lækker kontrast mellem sødt og salt.",
+      img: "https://www.juuls.dk/admin/public/getimage.ashx?Image=/Files/Images/Products/35011969.jpg&Width=480&Height=0&Format=jpg&Quality=75&Crop=0&filename=35011969-Chateau-des-Ormes-Sauternes.jpg",
+    },
+    {
+      name: "Off-dry Riesling",
+      note: "En let frugtig, let sød hvidvin med frisk syre hjælper med at rense ganen og tone den stærke ostesmag ned, samtidig med at vinens frugtighed fremhæver ostens cremethed.",
+      img: "https://winecountryontario.ca/wp-content/uploads/2024/04/Lailey-2022Off-DryRiesling_990x.webp",
+    },
+    {
+      name: "Lambrusco",
+      note: "Den let sprudlende, frugtige og ofte let sødlige Lambrusco har frisk syre og røde bærtoner, der både skærer gennem ostens rigdom og spiller godt sammen med dens aromaer.",
+      img: "https://www.vinello.dk/media/image/db/43/6e/riunite-lambrusco-rosso-magnum.png",
+    },
   ],
   Morbier: [
-    { name: "Gewürztraminer", note: "Aromatisk hvidvin med frugtige og lidt krydrede noter, som komplementerer Morbiers cremede tekstur og milde smag uden at overdøve den.", img: "https://megavin.b-cdn.net/media/catalog/product/cache/56356838e6e4b597abc0fc3e73c58f3f/d/i/dietrich_gewurztraminer_reserve_alsace.jpg" },
-    { name: "Pinot Noir", note: "Lysere rødvin med bløde tanniner og frugtige noter; dens syre og friske røde frugter passer godt til ostens cremethed og jordede undertoner.", img: "https://www.aevin.dk/wp-content/uploads/2023/09/Pinot-Noir-Vin-de-France-Heritiers-Sanint-Abel_1.jpg" },
+    {
+      name: "Gewürztraminer",
+      note: "Aromatisk hvidvin med frugtige og lidt krydrede noter, som komplementerer Morbiers cremede tekstur og milde smag uden at overdøve den.",
+      img: "https://megavin.b-cdn.net/media/catalog/product/cache/56356838e6e4b597abc0fc3e73c58f3f/d/i/dietrich_gewurztraminer_reserve_alsace.jpg",
+    },
+    {
+      name: "Pinot Noir",
+      note: "Lysere rødvin med bløde tanniner og frugtige noter; dens syre og friske røde frugter passer godt til ostens cremethed og jordede undertoner.",
+      img: "https://www.aevin.dk/wp-content/uploads/2023/09/Pinot-Noir-Vin-de-France-Heritiers-Sanint-Abel_1.jpg",
+    },
     { name: "Chardonnay", note: "En hvidvin med lidt fylde og evt. let fadlagring, som harmonerer med Morbiers milde, lidt nøddeagtige smag.", img: "https://menuvin.dk/cdn/shop/files/726.jpg?v=1737579655&width=1445" },
   ],
   Parmesan: [
     { name: "Chianti", note: "Syren og røde frugt-noter i Chianti skærer flot igennem Parmesanens salt- og umami-profil og balancerer ostens dybde.", img: "https://www.vinogvin.dk/images/Chianti-p.jpg" },
-    { name: "Prosecco", note: "Bobler og frisk syre renser ganen mellem bidene og giver en let, frisk kontrast til ostens kraftige smag.", img: "https://digitalassets.sallinggroup.com/image/upload/e_trim/b_white,c_pad,e_sharpen:80,f_auto,q_auto,w_464,h_464/eb4411fe66f1fefa588a103e3bf7a469" },
+    {
+      name: "Prosecco",
+      note: "Bobler og frisk syre renser ganen mellem bidene og giver en let, frisk kontrast til ostens kraftige smag.",
+      img: "https://digitalassets.sallinggroup.com/image/upload/e_trim/b_white,c_pad,e_sharpen:80,f_auto,q_auto,w_464,h_464/eb4411fe66f1fefa588a103e3bf7a469",
+    },
     { name: "Tør Riesling", note: "Høj syre og citrus/stenfrugt-noter skærer gennem saltet og fremhæver den nøddeagtige kompleksitet.", img: "https://www.otto-duborg.dk/1489-large_default/Eifel-Schiefergestein-Riesling-Tor.jpg" },
   ],
   Cheddar: [
     { name: "Cabernet Sauvignon", note: "Kraftige tanniner og fyldig frugt står godt imod cheddarens skarpe, nøddeagtige og salte noter.", img: "https://www.jyskvin.dk/image/cache/data/products/1540636-500x500.jpg" },
-    { name: "Merlot", note: "Blødere tanniner og rundere frugtprofil gør Merlot til en mere tilgængelig rødvin til cheddar.", img: "https://mediacache.hjhansen-vin.dk/v-639012183635265170/fc/2b/e46d-4833-4978-b6e3-2774fb77766c/18750709_El%20Descanso%20Merlot%20Errazuriz_HIGH.png" },
-    { name: "Tør Riesling", note: "Høj syre i tør Riesling eller et mousserende skaber en frisk kontrast til cheddarens cremede og skarpe smag, og syren renser ganen mellem bidene.", img: "https://www.otto-duborg.dk/1489-large_default/Eifel-Schiefergestein-Riesling-Tor.jpg" },
+    {
+      name: "Merlot",
+      note: "Blødere tanniner og rundere frugtprofil gør Merlot til en mere tilgængelig rødvin til cheddar.",
+      img: "https://mediacache.hjhansen-vin.dk/v-639012183635265170/fc/2b/e46d-4833-4978-b6e3-2774fb77766c/18750709_El%20Descanso%20Merlot%20Errazuriz_HIGH.png",
+    },
+    {
+      name: "Tør Riesling",
+      note: "Høj syre i tør Riesling eller et mousserende skaber en frisk kontrast til cheddarens cremede og skarpe smag, og syren renser ganen mellem bidene.",
+      img: "https://www.otto-duborg.dk/1489-large_default/Eifel-Schiefergestein-Riesling-Tor.jpg",
+    },
   ],
 };
 
@@ -143,7 +175,18 @@ function renderForWine(value) {
 function escapeHtml(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
-
+const WINES = {
+  Burrata: "img/burrata_.webp",
+  Camembert: "img/Camembert_.webp",
+  Cheddar: "img/cheddar.webp",
+  Comté: "img/Comté_.webp",
+  Emmentaler: "img/emmentaler_.webp",
+  Gedeost: "img/gederuller_.webp",
+  Gorgonzola: "img/gorgonzola.webp",
+  Gouda: "img/gouda.webp",
+  Morbier: "img/morbier.webp",
+  Parmesan: "img/parmesan.webp",
+};
 // Populate search results under the search input
 function showSearchMatches(q) {
   if (!q) {
@@ -161,13 +204,19 @@ function showSearchMatches(q) {
 
   searchResults.innerHTML = matches
     .map((k) => {
-      const img = PAIRINGS[k][0] && PAIRINGS[k][0].img ? PAIRINGS[k][0].img : `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
-      return `<div class="search-item" data-wine="${encodeURIComponent(k)}">
-                <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
-                <div>${escapeHtml(k)}</div>
-              </div>`;
+      const img =
+        WINES[k] ||
+        `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'
+        width='48' height='48'><rect width='100%' height='100%' fill='%23e6e6e6'/></svg>`;
+
+      return `
+        <div class="search-item" data-wine="${encodeURIComponent(k)}">
+          <img src="${img}" class="thumb" alt="${escapeHtml(k)}" />
+          <div>${escapeHtml(k)}</div>
+        </div>`;
     })
     .join("");
+
   searchResults.style.display = "block";
 }
 
