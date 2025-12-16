@@ -1,5 +1,4 @@
-
- .card {
+.card {
   max-width: 760px;
   margin: 0 auto;
   background: #fff;
@@ -8,7 +7,7 @@
 }
 h1 {
   margin: 0 0 8px;
-  
+
   font-weight: 700;
   text-align: center;
   margin-top: 0.5em;
@@ -182,7 +181,7 @@ button.nav-btn {
   /* reset default button styles */
   padding: 0;
   border: none;
-  background: x#bf646a;
+  background: #bf646a;
 }
 button.nav-btn:hover {
   background: #e4a0a5;
@@ -221,6 +220,6 @@ button.nav-btn:hover {
   }
 }
 
-label{
-    font-family: cormorant nor;
+label {
+  font-family: cormorant nor;
 }

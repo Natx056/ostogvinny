@@ -184,7 +184,7 @@ button.nav-btn {
   /* reset default button styles */
   padding: 0;
   border: none;
-  background: x#bf646a;
+  background: #bf646a;
 }
 button.nav-btn:hover {
   background: #8b4869;
@@ -223,6 +223,6 @@ button.nav-btn:hover {
   }
 }
 
-label{
-    font-family: cormorant nor;
+label {
+  font-family: cormorant nor;
 }
