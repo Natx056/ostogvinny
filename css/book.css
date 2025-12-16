@@ -1,0 +1,110 @@
+/* CSS Starter er tilføjet */
+/* Generelle styles */
+input {
+  border: 1px solid #f4cf85;
+  color: #fcfdfc;
+  padding: .25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+}
+
+button {
+  border: 1px solid #7E2B30;
+  background-color: #7e2b30;
+  color: #f4cf85;
+  border-radius: 6px;
+  padding: .25rlh .5rlh;
+  cursor: pointer;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+  margin-left: 1.5em;
+  
+  .form-group{
+    display: grid;
+    gap: 0.1rlh;
+  }
+  
+  .grid_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+/* Pseudo-classes */
+:focus-visible { /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 2px solid #8B4869;
+  outline-offset: 1px;
+}
+/* Hover-styles */
+button:hover {
+  background: #8B4869;
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: .98;
+}
+
+/* Valideringsregler */
+/* Skjul fejlmeddelelsen som standard */
+.error-message {
+  display: none;
+}
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid #f005;
+    border-color: darkred;
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .error-message {
+    display: block;
+  }
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    font-family: cormorant boldit;
+    font-size: 15px;
+    padding: 0.5em;
+}
+label{
+   font-family: cormorant nor; 
+}
+
+.grid_11{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img{
+    max-width: 500px;
+    max-height: 600px;
+    place-self: center;
+    border-radius: 8px;
+}

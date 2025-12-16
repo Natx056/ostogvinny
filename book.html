@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book os</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/book.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="imgkaj/Logo.svg" alt="logo" />
+        <h2 class="headline">Mariager Ost & Vin</h2>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li>
+            <a href="ost.html">Fødevarer</a>
+          </li>
+          <li>
+            <a href="vin.html">Drikkevarer</a>
+          </li>
+          <li>
+            <a href="book.html">Book Os</a>
+          </li>
+          <li>
+            <a href="omkaj.html">Om Kaj</a>
+          </li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+        <h1>Book os til din fest</h1>
+       <div class="grid_11">
+      <form aria-label="book event">
+        <div class="form-group">
+          <label for="first_name">Fornavn</label>
+          <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Efternavn</label>
+          <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" required />
+          <p class="error-message" id="lname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" aria-describedby="email-error" required />
+          <p class="error-message" id="email-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="adress">Adresse</label>
+          <input type="adress" id="adress" name="adress" aria-describedby="adress-error" required />
+          <p class="error-message" id="adress-error">Please enter a value</p>
+        </div>
+        <div class="grid_form">
+          <div class="form-group">
+            <label for="post">Post nummer</label>
+            <input type="text" id="post" name="post" aria-describedby="post-error" required />
+            <p class="error-message" id="post-error">Please enter a value</p>
+          </div>
+          <div class="form-group">
+            <label for="by">By</label>
+            <input type="text" id="by" name="by" aria-describedby="by-error" required />
+            <p class="error-message" id="by-error">Please enter a value</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="date">Dato</label>
+          <input type="date" id="date" name="date" aria-describedby="date-error" required />
+          <p class="error-message" id="date-error">Please enter a value</p>
+        </div>
+        <div class="form-group besked">
+          <label for="box">Besked</label>
+          <input type="text" id="text" name="text" aria-describedby="text-error" required />
+          <p class="error-message" id="text-error">Please enter a value</p>
+        </div>
+        <div class="form-group">
+          <label for="accept_terms">
+            <input type="checkbox" id="accept_terms" name="accept_terms" value="yes" aria-describedby="terms-error" required />
+            Accept terms
+          </label>
+          <p class="error-message" id="terms-error">Please tick the box</p>
+        </div>
+
+        <button>Send</button>
+      </form>
+      <img src="img/beaujolais-winter-cheeseboard-2_.webp" alt="cheeseboard">
+    </div> 
+    </main>
+    <footer>
+      <div class="footeragain">
+        <img src="imgkaj/Logo.svg" alt="logo" />
+        <nav>
+          <ul class="foot">
+            <li>Tlf. 98 54 12 23</li>
+            <li>Klostergade 9 | 9550 Mariager</li>
+            <li>CVR-nr: 10258693</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/forms.js"></script>
+</html>
