@@ -53,3 +53,10 @@ h2{
 .cta{
     place-self: center;
 }
+
+@media screen and (width < 800px) {
+    .flex_col{
+        max-width: 200px;
+        
+    }
+}

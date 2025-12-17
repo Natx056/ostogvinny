@@ -108,3 +108,10 @@ img{
     place-self: center;
     border-radius: 8px;
 }
+
+@media screen and (width < 800px) {
+    .vinpic{
+        display: none;
+    }
+    
+}

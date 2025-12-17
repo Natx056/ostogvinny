@@ -45,14 +45,17 @@ nav {
 .burger {
   display: none;
 }
+
 @media screen and (width < 800px) {
   .menu {
     display: none;
+    margin: 0;
   }
   .burger {
     display: block;
     background-color: transparent;
     border: 0;
+    margin-left: 140px;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
